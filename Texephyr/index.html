@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="slideshow-container">
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="imgbox">
+                <img src="./images/micsk1.jpg" class="imgstyle">
+                <img src="./images/micskmob1.jpg" class="imgmobile">
+                <a href="viewmore.html"><button class="buttonstyle">EXPLORE El-Clasico Of Cricket</button></a>
+            </div>
+            <!-- <div class="text">Welcome to the <br />El-Clasico of Cricket</div> -->
+
+        </div>
+        <div class="mySlides fade">
+            <div class="imgbox">
+
+                <img src="./images/csk.jpg" class="imgstyle">
+                <img src="./images/cskmob.jpg" class="imgmobile">
+                <a href="csk.html"><button class="buttonstyle">VIEW CSK STATS</button></a>
+            </div>
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="imgbox">
+                <img src="./images/mi.jpg" class="imgstyle">
+                <img src="./images/mimobile1.jpg" class="imgmobile">
+                <a href="mi.html"><button class="buttonstyle">VIEW MI STATS </button></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+</script>
+
+</html>

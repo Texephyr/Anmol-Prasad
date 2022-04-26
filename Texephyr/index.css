@@ -94,6 +94,38 @@ to {opacity: 1}
   border: 2px solid #000c1f;
   
 }
+.buttonstyle2{
+  z-index: 100;
+  position: fixed;
+  margin-left: 35%;
+  margin-top: 40%;
+  min-width: 500px;
+  /* height: 70px; */
+  font-size: 22px;
+  border-radius: 10px;
+  padding:20px;
+  color: white;
+  /* font-weight: bold; */
+  background-color: #000c1f;
+  border: 2px solid #000c1f;
+  
+}
+.buttonstyle3{
+  z-index: 100;
+  position: fixed;
+  margin-left: 35%;
+  margin-top: 40%;
+  min-width: 500px;
+  /* height: 70px; */
+  font-size: 22px;
+  border-radius: 10px;
+  padding:20px;
+  color: white;
+display:none;
+  background-color: #000c1f;
+  border: 2px solid #000c1f;
+  
+}
 @media (max-width : 500px){
   .imgmobile{
       display: block;
@@ -101,11 +133,16 @@ to {opacity: 1}
   .imgstyle{
       display: none;
   }
-  .buttonstyle{
-      margin-left: 10%;
+  .buttonstyle , .buttonstyle3{
+      margin-left: 15%;
+      /* margin:auto; */
       overflow: hidden;
-      margin-top: 100%;
+      margin-top: 140%;
   }
+  .buttonstyle2{
+display: none;
+  }
+
 }
 @media only screen and (max-width: 300px) {
 .text {font-size: 11px}
